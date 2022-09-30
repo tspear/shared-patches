@@ -1,1 +1,4 @@
-shared patched for music software
+shared patches for:
+- pd
+- max
+- orca
