@@ -1,4 +1,4 @@
-#N canvas 1164 214 918 775 10;
+#N canvas 746 498 1041 779 10;
 #X obj 389 242 outlet OSC-from-serialosc;
 #X obj 363 503 inlet OSC-to-serialosc;
 #X obj 49 62 loadbang;
@@ -83,6 +83,7 @@
 #X msg 204 726 15 0 0;
 #X msg 204 703 set \$1 \$2 \$3;
 #X text 307 661 <<<<< Example;
+#X text 616 20 serialosc.pd - fixed for new PD versions;
 #X connect 1 0 31 0;
 #X connect 2 0 15 0;
 #X connect 3 0 4 0;
