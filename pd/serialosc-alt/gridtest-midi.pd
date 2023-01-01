@@ -1,23 +1,24 @@
-#N canvas 1322 525 1205 774 10;
-#X obj 109 207 serialosc;
-#X obj 109 233 print;
+#N canvas 598 482 1205 774 10;
+#X obj 110 234 serialosc;
+#X obj 110 260 print;
 #X obj 109 131 random 256;
 #X obj 108 81 metro 1000;
 #X obj 109 45 loadbang;
 #X obj 122 106 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
 #000000 #000000;
 #X floatatom 109 157 5 0 0 0 - - - 0;
-#X msg 109 183 /monome/grid/led/row 0 0 \$1;
+#X msg 110 210 /monome/grid/led/row 0 0 \$1;
 #X obj 88 46 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
 0 1;
-#X obj 59 207 noteout;
+#X obj 151 184 makenote 100 500;
+#X obj 151 159 / 2;
 #X connect 0 0 1 0;
 #X connect 2 0 6 0;
+#X connect 2 0 10 0;
 #X connect 3 0 2 0;
 #X connect 3 0 5 0;
 #X connect 4 0 3 0;
 #X connect 6 0 7 0;
-#X connect 6 0 9 0;
-#X connect 6 0 9 1;
 #X connect 7 0 0 0;
 #X connect 8 0 3 0;
+#X connect 10 0 9 0;
