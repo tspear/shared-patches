@@ -1,8 +1,8 @@
-#N canvas 579 23 697 309 12;
-#X obj 28 49 serialosc;
-#X obj 27 19 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000
-#000000;
-#X obj 125 101 print;
+#N canvas 495 23 355 197 12;
+#X obj 18 72 serialosc;
+#X obj 17 42 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 115 124 print;
+#X text 12 12 Print serialosc output;
 #X connect 0 0 2 0;
 #X connect 0 1 2 0;
 #X connect 1 0 0 0;
