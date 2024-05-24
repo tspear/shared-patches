@@ -1,15 +1,14 @@
-#N canvas 172 23 681 774 10;
-#X obj 109 207 serialosc;
-#X obj 109 233 print;
-#X obj 109 131 random 256;
-#X obj 108 81 metro 1000;
-#X obj 109 45 loadbang;
-#X obj 122 106 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
-#000000 #000000;
-#X floatatom 109 157 5 0 0 0 - - - 0;
-#X msg 109 183 /monome/grid/led/row 0 0 \$1;
-#X obj 88 46 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000
-0 1;
+#N canvas 55 23 489 427 10;
+#X obj 48 233 serialosc;
+#X obj 48 259 print;
+#X obj 48 157 random 256;
+#X obj 47 107 metro 1000;
+#X obj 48 71 loadbang;
+#X obj 61 132 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X floatatom 48 183 5 0 0 0 - - - 0;
+#X msg 48 209 /monome/grid/led/row 0 0 \$1;
+#X obj 27 72 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
+#X text 17 14 Test the momome connection. Set row 0 to a random set of leds;
 #X connect 0 0 1 0;
 #X connect 2 0 6 0;
 #X connect 3 0 2 0;
