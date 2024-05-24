@@ -1,8 +1,0 @@
-#N canvas 33 196 592 649 12;
-#X obj 132 219 dac~;
-#X obj 148 70 gain~;
-#X obj 73 58 vu 15 120 empty empty -1 -8 0 10 -66577 -1 1 0;
-#X obj 222 59 vsl 15 128 0 127 0 0 empty empty empty 0 -9 0 10 -262144
--1 -1 0 1;
-#X obj 132 185 osc~ 440, f 10;
-#X connect 4 0 0 0;
